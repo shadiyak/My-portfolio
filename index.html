@@ -289,9 +289,9 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-5">
 
-          <div class="col-lg-5">
+          <div class="col-lg-7">
 
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -321,47 +321,38 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <input type="hidden" name="access_key" value="e5b95328-31c2-44be-bffd-2c9a8dfcd73e">
-              <div class="row gy-4">
+          <div class="col-lg-5">
+           <form class="contact-form info-wrap" action="https://api.web3forms.com/submit" method="POST"> 
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+              <input type="hidden" name="access_key" value="088c2f98-8967-421e-946a-482f12e8c1f4" />
+              <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+              <input type="hidden" name="from_name" value="My Website" />
+              <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+          
+              <div class="form-group-container">
+                <div class="form-group mb-5">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required/>
                 </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required>
+                <div class="form-group mb-5">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required />
                 </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                <div class="form-group mb-5">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input id="phone" name="phone" class="form-input" placeholder="7499856789" type="tel" pattern="[0-9]{10}"  required  />
                 </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required ></textarea>
+                <div class="form-group mb-5">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="Your message" type="text" minlength="20" required></textarea>
                 </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
+              </div class="mb-5">
+              <button class="form-submit" type="submit">Send Message</button>
             </form>
+            
           </div><!-- End Contact Form -->
-
         </div>
-
       </div>
-      
     </section><!-- /Contact Section -->.
 
   </main>
